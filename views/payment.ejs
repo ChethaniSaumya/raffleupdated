@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Form</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <link rel="stylesheet" href="/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+   
+
+    h1 {
+      text-align: center;
+    }
+
+    .payment-form {
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 5px;
+      width: 25rem;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: white;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    #card-errors {
+      color: #dc3545;
+      margin-top: 10px;
+    }
+
+
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .success-message {
+      color: #28a745;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .error-message {
+      color: #dc3545;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #name {
+      border: 0px;
+    }
+    .InputContainer .InputElement {
+    color: white !important;  
+    }
+
+    #name:focus {
+      border: 0px;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-800 ">
+  <%- include("./partials/navbar") %>
+
+  <div class="btBg">
+  <!-- <h1 class="text-white mb-2">Payment Form</h1> -->
+  <div class="dashboardtxt">Buy Tickets</div>
+  <div class="payForm">
+    <form id="payment-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="inputPay" id="name" name="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group" >
+        <label for="card-element" class="text-sm">Credit or debit card</label>
+        <div id="card-element" class=""></div>
+        <div id="card-errors" class="mt-4" role="alert"></div>
+      </div>
+      <button class="btn2" name="buyer">Submit Payment</button>
+    </form>
+  </div>
+</div>
+
+  <%- include("./partials/footer") %>
+
+  <script>
+    // Set your publishable key
+    var stripe = Stripe('<%- key %>');
+    var stripe = Stripe('<%- key %>', { betas: ['checkout_beta_4'], apiVersion: '2020-08-27', sandbox: true });
+
+    // Create an instance of Elements
+    var elements = stripe.elements();
+
+    // Create an instance of the card Element
+    var card = elements.create('card');
+
+    // Add an instance of the card Element into the `card-element` <div>
+    card.mount('#card-element');
+
+    // Handle form submission
+    var form = document.getElementById('payment-form');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Disable the submit button to prevent multiple clicks
+      form.querySelector('button').disabled = true;
+
+      // Create a payment method using the card Element
+      stripe.createPaymentMethod('card', card, {
+        billing_details: {
+          name: form.name.value
+        }
+      })
+        .then(function (result) {
+          console.log({ result })
+          console.log({ paymentMethodId: result.paymentMethod.id })
+          if (result.error) {
+            // Display error message in the card-errors <div>
+            var errorElement = document.getElementById('card-errors');
+            errorElement.textContent = result.error.message;
+          } else {
+            axios.post('/processPayment', {
+              paymentMethodId: result.paymentMethod.id,
+              userId : "<%= user._id %>",
+              email : "<%= user.email %>"
+            }, {
+              headers: {
+                'Content-Type': 'application/json'
+              }
+            })
+              .then(function (data) {
+                console.log({data})
+                // Handle the response from your server
+                if (data.data.success) {
+                  // Payment succeeded, show a success message to the user
+                  var successMessage = document.createElement('div');
+                  successMessage.classList.add('success-message');
+                  successMessage.textContent = 'Payment successful!';
+                  form.appendChild(successMessage);
+                  window.location="/paymentSuccess"
+                } else {
+                  // Payment failed, show an error message to the user
+                  var errorMessage = document.createElement('div');
+                  errorMessage.classList.add('error-message');
+                  errorMessage.textContent = 'Payment failed!';
+                  form.appendChild(errorMessage);
+                  window.location="/paymentFailed"
+                }
+              });
+          }
+        });
+    });
+  </script>
+</body>
+
+</html>

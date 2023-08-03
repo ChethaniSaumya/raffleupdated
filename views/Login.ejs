@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Loginpage</title>
+</head>
+
+
+<body class="bg-slate-900">
+  <nav class="nav">
+    <div class="flex flex-row justify-between w-11/12 mx-auto">
+
+      <div class="log text-white justify-center items-center font-bold flex flex-row">
+        <button id="menuBtn" class="flex sm:hidden ml-2 mr-4">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <a href="/">
+          <img src="/assets/logo.png" class="logo" alt="">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <%- include("./partials/sidebar") %>
+
+
+    <div class="bgGradient3">
+      <% if(message){%>
+        <p class="text-black py-2 bg-yellow-200 mt-4 rounded-full px-3 text-center my-2">
+          <%= message %>
+        </p>
+        <% } %>
+          <div></div>
+          <p class="dashboardtxt">Welcome to Raffle Rush</p>
+
+          <form method="post" action="/login">
+            <div class="mb-3">
+              <input type="text" name="username" placeholder="Email "
+                class="border-2 text-white  bg-slate-900 rounded-md border-gray-400 py-2 px-3 w-full">
+            </div>
+            <div class="mb-3">
+              <input name="password" type="password" placeholder="Password "
+                class="border-2 mb-1 text-white  bg-slate-900 rounded-md border-gray-400 py-2 px-3 w-full">
+              <a href="/forgot-password" class="text-sm ml-3  text-gray-300">Reset Password</a>
+            </div>
+            <div class="flex justify-center mt-2 items-center">
+              <button type="submit" class="loginMain">Login</button>
+            </div>
+          </form>
+          <div class="flex flex-row mt-3 justify-center items-center gap-3">
+            <p class="text-sm text-gray-500">Already Having Account ? </p>
+            <a href="/register" class="underline text-white">Signup</a>
+          </div>
+          <div class="border-t-2   border-gray-400 mt-5"></div>
+
+          <div class="flex flex-col sm:flex-row mt-6 justify-center items-center gap-3">
+            <a href="/auth/google"
+              class="py-2  flex flex-row justify-arround gap-3 items-center px-3 rounded-[1.4rem] bg-white  w-11/12 text-red-500 mb-2 sm:mb-0">
+              <img class="w-8 h-8" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" />
+              <span class=" text-sm font-semibold ml-3 sm:ml-0"> Signin with Google </span>
+            </a>
+
+            <a href="/auth/facebook"
+              class="py-2  flex flex-row justify-arround gap-3 items-center px-3 rounded-[1.4rem] bg-blue-500  w-11/12 text-white  ">
+              <img class="w-8 h-8" src="https://img.icons8.com/color/48/facebook-circled--v1.png"
+                alt="facebook-circled--v1" />
+              <span class=" text-sm ml-3 sm:ml-0 font-semibold"> Signin with Facebook </span>
+            </a>
+          </div>
+
+    </div>
+
+
+
+
+
+
+
+    <%- include("./partials/footer") %>

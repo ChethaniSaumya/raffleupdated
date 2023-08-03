@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Events</title>
+  </head>
+
+
+  <body class="bg-slate-900">
+    <%- include("./partials/navbar") %>
+
+
+    <div class="eventBg">
+        <p class="dashboardtxt">Current Events</p>
+        <div class="flex-col2 ">
+        
+            <div class="w-[20rem]  overflow-x-scroll sm:overflow-x-auto	sm:w-full">
+
+            <table class="mx-auto">
+                <thead>
+                  <tr>
+                    <th class="px-1 text-white py-2">Event Name</th>
+                    <th class="px-4 text-white py-2">Start Date</th>
+                    <th class="px-4 text-white py-2">End Date</th>
+                    <th class="px-4 text-white py-2">Status</th>
+                    <th class="px-4 text-white py-2">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 <% if(events.length > 0){ %>
+                  <% events.forEach((event, index) => { %>
+                    <% if(index % 2 === 0) { %>
+                      <tr class="trNew">
+                    <% } else { %>
+                      <tr class="">
+                    <% } %>
+                      <td class=" px-4 text-white py-2"><%= event.eventName %></td>
+                      <td class=" px-4 text-white py-2"><%= moment(event.startdate).format('DD/MM/YY'); %></td>
+                      <td class=" px-4 text-white py-2"><%= moment(event.enddate).format('DD/MM/YY'); %></td>
+                      <td class=" px-4 text-white py-2"><%= event.eventEnds ? "Ended" : "Waiting" %></td>
+                      <td class=" px-4 text-white ">
+                        <% if(moment(event.enddate) < Date.now()){ %>
+                          <button disabled class="btn">Event Expired</button>
+                          <%}else{%>
+                            <a href="/eventDraw/<%= event._id %>" class="btn">Enter</a>
+                          <%}%>
+                      </td>
+                    </tr>
+                    <% }) %>
+                    <%}else{%>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td class=" px-4 text-white  py-12">
+                          No Event Found !
+                        </td>
+                      </tr>
+                    <%}%>
+                </tbody>
+              </table>
+            </div>
+
+          
+           
+          
+        </div>
+    </div>
+
+
+
+
+
+    <%- include("./partials/footer") %>
+    

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Admin HOme</title>
+</head>
+
+
+<body class="bg-slate-900">
+  <%- include("./partials/adminNav") %>
+
+
+    <div class="w-full flex flex-row justify-center sm:justify-between ">
+      <div id="sidebar"
+        class=" hidden w-7/12 sm:flex justify-center items-center sm:w-3/12 bg-slate-800 h-[85vh] absolute sm:static left-0"
+        style="z-index: 99;">
+        <div id="navMenu" class="flex flex-col justify-center items-center gap-2 ">
+          <a href="#" class="  text-gray-200 hover:text-white  py-1 px-2 rounded-md">Dashboard</a>
+          <a href="/addEvent" class=" text-gray-200 hover:text-white  py-1 px-2 rounded-md text-sm text-gray-300">Add Event</a>
+          <div class="flex mt-12">
+            <a href="/adminLogout" class="text-white rounded-md bg-red-600 py-1 px-3 ">Logout</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <div class="w-10/12 mx-auto " style="z-index: 8;">
+          <div class="flex flex-col sm:flex-row my-4  sm:my-12 gap-3 justify-center items-center">
+            <div class=" bg-slate-900 rounded-md border-2 h-28 border-gray-600 ">
+              <span class="text-gray-300 m-3 text-sm">Events</span>
+              <a href="#"
+                class=" mt-5 flex justify-center items-center text-white w-[15rem] sm:w-[12rem] font-bold text-lg">
+                <%= events.length %>
+              </a>
+            </div>
+            <div class=" bg-slate-900 rounded-md border-2 h-28 border-gray-600 ">
+              <span class="text-gray-300 m-3 text-sm">Tickets</span>
+              <a href="#"
+                class=" mt-5 flex justify-center items-center text-white w-[15rem] sm:w-[12rem] font-bold text-lg">
+                <%= tickets.length %>
+              </a>
+            </div>
+            <div class=" bg-slate-900 rounded-md border-2 h-28 border-gray-600 ">
+              <span class="text-gray-300 m-3 text-sm">Users</span>
+              <a href="#"
+                class=" mt-5 flex justify-center items-center text-white w-[15rem] sm:w-[12rem] font-bold text-lg">
+                <%= users.length %>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="my-12 sm:w-10/12 w-[20rem] table-container overflow-x-scroll sm:overflow-x-auto  mx-auto" id="events">
+          <div class="flex items-center mx-4 justify-between text-white mb-4">
+            <p class="text-white my-2 text-yellow-300 text-sm">Events List</p>
+            <div class="r">
+              <label for="rows" class="mr-2">Rows:</label>
+              <select class="rows-select px-3 py-1 bg-slate-700  rounded">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+              </select>
+            </div>
+          </div>
+          <table class="min-w-full border data-table rounded-md border-gray-500">
+            <thead>
+              <tr>
+                <th class="px-1 text-white py-2">Event Name</th>
+                <th class="px-4 text-white py-2">Start Date</th>
+                <th class="px-4 text-white py-2">End Date</th>
+                <th class="px-4 text-white py-2">Status</th>
+                <th class="px-4 text-white py-2">Action</th>
+              </tr>
+            </thead>
+            <tbody >
+              <% events.slice(0, 5).forEach((event , index)=> { %>
+                <% if(index % 2===0) { %>
+                  <tr class="bg-slate-800 rounded-md">
+                    <% } else { %>
+                  <tr class="">
+                    <% } %>
+                      <td class=" px-4 text-white py-2">
+                        <%= event.eventName %>
+                      </td>
+                      <td class=" px-4 text-white py-2">
+                        <%= moment(event.startdate).format('DD/MM/YY'); %>
+                      </td>
+                      <td class=" px-4 text-white py-2">
+                        <%= moment(event.enddate).format('DD/MM/YY'); %>
+                      </td>
+                      <td class=" px-4 text-white py-2">
+                        <%= event.eventEnd ? "Ended" : "Waiting" %>
+                      </td>
+                      <td class=" px-4 text-white py-2 flex flex-row  gap-2 items-center">
+
+                        <button data-id="<%= event._id %>" data-name="<%= event.eventName %>"
+                          data-startdate="<%= event.startdate %>" data-enddate="<%= event.enddate %>"
+                          data-ended="<%= event.eventEnd %>"
+                          class="py-1 px-1 bg-yellow-600 px-2  rounded-md text-white font-bold text-center showDetailsBtn"><i
+                            class="fa-regular fa-eye"></i></button>
+                        <a href="/deleteEvent/<%= event._id %>"
+                          class="py-1 px-1 bg-red-600 px-2 rounded-md text-white font-bold text-center"><i
+                            class="fa-solid fa-trash-can"></i></a>
+                      </td>
+                  </tr>
+                  <% }) %>
+            </tbody>
+          </table>
+
+        </div>
+
+
+
+        <!-- Show Details Popup -->
+        <div id="popup" class="fixed inset-0 flex items-center justify-center z-50  hidden">
+          <div class="bg-slate-600 rounded-lg  max-w-md w-10/12">
+
+            <div class="p-8">
+              <h2 class="text-xl font-bold mb-4 text-white">Event Details</h2>
+              <p class="text-white"><strong class="mr-4">Event Name:</strong> <span class="text-sm"
+                  id="eventName"></span></p>
+              <p class="text-white"><strong class="mr-4">Start Date:</strong> <span class="text-sm"
+                  id="eventstartdate"></span></p>
+              <p class="text-white"><strong class="mr-4">End Date:</strong> <span class="text-sm"
+                  id="eventenddate"></span></p>
+              <p class="text-white"><strong class="mr-4">Event Ended:</strong> <span class="text-sm"
+                  id="eventLocation"></span></p>
+            </div>
+            <div class="flex justify-end p-4 gap-3">
+              <a id="endEventBtn" href="" class="py-2 px-4 rounded-md bg-slate-100 font-semibold text-black">End
+                Event</a>
+              <button id="closeBtn" class="py-2 px-4 rounded-md bg-yellow-600 text-white font-semibold">Close</button>
+            </div>
+          </div>
+        </div>
+        <!-- Show Details Popup -->
+
+
+        <div id="users" class="my-12 sm:w-10/12 w-[21rem] px-3 table-container  overflow-x-scroll sm:overflow-x-auto mx-auto">
+          <div class="flex items-center justify-between text-white mb-4">
+            <p class="text-white my-2 text-yellow-300 text-sm">Users List</p>
+            <div class="r">
+              <label for="rows" class="mr-2">Rows:</label>
+              <select class="rows-select px-3 py-1 bg-slate-700  rounded">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+              </select>
+            </div>
+          </div>
+          <table class="min-w-full border rounded-md data-table border-gray-500 mx-auto">
+            <thead>
+              <tr>
+                <th class="px-1 text-white py-2">Full Name </th>
+                <th class="px-1 text-white py-2">Email</th>
+                <th class="px-1 text-white py-2">Phone</th>
+                <th class="px-4 text-white py-2">Status</th>
+                <th class="px-4 text-white py-2">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% users.slice(0, 5).forEach((user , index)=> { %>
+                <% if(index % 2===0) { %>
+                  <tr class="bg-slate-800 rounded-md">
+                    <% } else { %>
+                  <tr class="">
+                    <% } %>
+                      <td class=" px-4 text-white py-2">
+                        <%= user.name %>
+                      </td>
+                      <td class=" px-4 text-white py-2">
+                        <%= user.email %>
+                      </td>
+                      <td class=" px-4 text-white py-2">
+                        <%= user.phone %>
+                      </td>
+                      <td class=" px-4 text-white py-2">
+                        <%= user.verified ? "verified" : "Not verified" %>
+                      </td>
+                      <td class=" px-4 text-white py-2 flex flex-row  gap-2 items-center">
+                        <a href="/deleteUser/<%= user._id %>"
+                          class="py-1 px-1 bg-red-600 px-2 rounded-md text-white font-bold text-center"><i
+                            class="fa-solid fa-trash-can"></i></a>
+                        <a href="/makeAdmin %>"
+                          class="py-1 px-1 bg-yellow-600 px-2 rounded-md text-white font-bold text-center">
+                          <span class="text-sm">
+                            Admin
+                          </span>
+                        </a>
+                      </td>
+                  </tr>
+                  <% }) %>
+            </tbody>
+          </table>
+
+        </div>
+
+
+
+
+        <div id="users" class="my-12 sm:w-10/12 w-[21rem] px-3 table-container  overflow-x-scroll sm:overflow-x-auto mx-auto">
+          <div class="flex items-center justify-between text-white mb-4">
+            <p class="text-white my-2 text-yellow-300 text-sm">Tickets List</p>
+            <div class="r">
+              <label for="rows" class="mr-2">Rows:</label>
+              <select class="rows-select px-3 py-1 bg-slate-700  rounded">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+              </select>
+            </div>
+          </div>
+          <table class="min-w-full border rounded-md data-table border-gray-500 mx-auto">
+            <thead>
+              <tr>
+                <th class="px-1 text-white py-2">Ticket Id</th>
+                <th class="px-1 text-white py-2">Event Id</th>
+                <th class="px-1 text-white py-2">User Id</th>
+                <th class="px-4 text-white py-2">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% tickets.slice(0, 5).forEach((ticket , index)=> { %>
+                <% if(index % 2===0) { %>
+                  <tr class="bg-slate-800 rounded-md">
+                    <% } else { %>
+                  <tr class="">
+                    <% } %>
+                      <td class=" px-4 text-white py-2">
+                        <%= ticket._id %>
+                      </td>
+                      <td class=" px-4 text-white py-2">
+                        <%= ticket.eventId %>
+                      </td>
+                      <td class=" px-4 text-white py-2">
+                        <%= ticket.userId %>
+                      </td>
+                      <td class=" px-4 text-white py-2">
+                        <%= ticket.value %>
+                      </td>
+                  </tr>
+                  <% }) %>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <%- include("./partials/footer") %>
+      <script>
+        function toggleDropdown(dropdownId) {
+          const dropdown = document.getElementById(dropdownId + '-dropdown');
+          dropdown.classList.toggle('hidden');
+        }
+      </script>
+      <script>
+        $(document).ready(function () {
+          // Code to be executed when the DOM is ready
+          $('#adminMenu').click(function () {
+            $("#sidebar").toggle()
+          });
+          $('#closeSidebarBtn').click(function () {
+            console.log('first')
+            $("#sidebar").hide()
+          });
+        });
+      </script>
+
+      <!-- Add necessary JavaScript code -->
+      <!-- Add necessary JavaScript code -->
+      <script>
+        $(document).ready(function () {
+          $('.showDetailsBtn').on('click', function () {
+            const eventId = $(this).data('id');
+            const eventName = $(this).data('name');
+            const eventstartdate = $(this).data('startdate');
+            const eventenddate = $(this).data('enddate');
+            const eventEnded = $(this).data('ended');
+
+            $('#eventName').text(eventName);
+            $('#eventstartdate').text(eventstartdate);
+            $('#eventenddate').text(eventenddate);
+            $('#eventLocation').text(eventEnded ? "True" : "False");
+
+            $('#popup').removeClass('hidden');
+            $('#endEventBtn').attr('href', "/endEvent/" + eventId);
+
+          });
+
+          $('#closeBtn').on('click', function () {
+            $('#popup').addClass('hidden');
+          });
+        });
+      </script>
+
+      <script>
+        $(document).ready(function () {
+          // Function to handle dropdown change event for all tables
+          $('.rows-select').on('change', function () {
+            var selectedRows = parseInt($(this).val());
+            var tableContainer = $(this).closest('.table-container');
+            var table = tableContainer.find('.data-table');
+            var allRows = table.find('tbody tr');
+
+            // Hide all rows initially
+            allRows.hide();
+
+            // Show selected number of rows
+            allRows.slice(0, selectedRows).show();
+          });
+        });
+      </script>

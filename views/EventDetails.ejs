@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Event Details</title>
+  <style>
+    /* Custom CSS for the circular timer border */
+     /* Custom CSS for the circular timer border */
+     .timer-border {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .timer-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 5px solid #0f4b70; /* Progress border color */
+      border-radius: 50%;
+      animation: countdownAnimation 1s linear infinite; /* Animation to decrease the border length */
+      clip-path: circle(50%); /* Initially hide half of the circle */
+    }
+
+    @keyframes countdownAnimation {
+      0% { clip-path: circle(50%); } /* Full circle */
+      100% { clip-path: circle(0); } /* No circle (border hidden) */
+    }
+    
+  </style>
+</head>
+
+
+<body class="bg-slate-900">
+  <%- include("./partials/navbar") %>
+
+    <div class="bgGradient ">
+      <div class="eventImg my-5">
+        <!-- <img src="/assets/bg-2.jpg" class="w-[20rem] sm:w-11/12 mx-auto" alt=""> -->
+        <img class="eventImg1"
+          src="https://media.discordapp.net/attachments/1008571037862080542/1130159808536911882/NFTHouse9_casino_raffle_cyber_punk_theme_numbers_4349aaa8-87ec-40b3-8569-b255f1546db8.png?width=1025&height=284" />
+      </div>
+      <div class="flex flex-row justify-between w-11/12 sm:w-10/12 px-4">
+        <div class="flex w-8/12  flex-col">
+
+          <div id="fontSize">
+
+            <div class="text-white w-10/12 mx-auto">
+              Event details :<span id="fontSize">
+                <%= eventDetails.description %>
+              </span>
+            </div>
+            <div class="text-white mt-3 w-10/12 mx-auto">
+              Event Starting Date : <span class="text-sm text-gray-300"><span id="fontSize">
+                  <%= eventDetails.startdate %>
+                </span></span>
+              <br>
+              Event Ends at : <span class="text-sm text-gray-300"><span id="fontSize">
+                  <%= eventDetails.enddate %>
+                </span> </span>
+            </div>
+          </div>
+
+          <div class="flex w-10/12 mx-auto mt-5">
+            <a href="/event/<%= eventDetails._id %>" class="btn2 "> Enter the draw </a>
+          </div>
+          <div class="eventDetailsMain"></div>
+        </div>
+        <div class="ml-4">
+          <input type="hidden" id="countdownTime" class="rounded-lg p-2 w-40"
+            placeholder="Enter time (e.g., 2023-12-31 23:59:59)"
+            value=" <%= eventDetails.enddate %>">
+            <div class="relative timer-border ">
+              <div id="countdownProgress" class="absolute timer-progress"></div>
+              <div id="countdownDisplay" class="absolute inset-0 flex items-center justify-center text-gray-300 text-xl font-bold"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <%- include("./partials/footer") %>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          const countdownTime = $("#countdownTime").val();
+
+          if (countdownTime) {
+            const targetDate = new Date(countdownTime).getTime();
+            if (!isNaN(targetDate)) {
+              // Update the countdown every second
+              const interval = setInterval(function () {
+                const now = new Date().getTime();
+                const timeRemaining = targetDate - now;
+
+                if (timeRemaining > 0) {
+                  const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                  const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                  $("#countdownDisplay").html(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+
+                 
+              } else {
+                  clearInterval(interval);
+                  $(".timer-border").html("<p class='text-white text-lg mt-2 sm:mt-16 ml-1 sm:ml-6'>Event expired!</p>");
+                }
+              }, 1000);
+            } else {
+              alert("Invalid date format! Please enter a valid date in the format YYYY-MM-DD HH:mm:ss.");
+            }
+          } else {
+            alert("Please enter a valid date in the format YYYY-MM-DD HH:mm:ss.");
+          }
+        });
+      </script>

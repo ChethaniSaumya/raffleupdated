@@ -1,0 +1,3634 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@media screen and (max-width: 499px) {
+
+  .title {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5vh;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #2acbe4;
+  }
+
+  .bg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130009318540976190/NFTHouse9_numbers_photorealistic_cyber_punk_theme_fd5c3ecd-7a08-4cf1-afff-a10afeb2143e.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .eventBg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://media.discordapp.net/attachments/1008571037862080542/1130082267516116992/NFTHouse9_raffle_casino_cyber_punk_theme_2e21c1e6-f329-426d-a4bc-740a99e3350b.png?width=843&height=473') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .btBg {
+    background: radial-gradient(circle, rgba(0, 27, 47, 0.20129770658263302) 0%, rgba(0, 13, 21, 0.6046590511204482) 49%, rgba(0, 13, 23, 0.963202468487395) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130094560077430814/NFTHouse9_coins_falling_cyber_punk_theme_7af67880-0c6b-4ddd-a0a9-ffd2a6997d85.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 15vh;
+  }
+
+  .box2Main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .box2 {
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    width: 95%;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease-in-out;
+    margin-bottom: 30px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box2:hover {
+    color: #00c7eb;
+  }
+
+  #searchForm {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .search {
+    background-color: rgb(0, 22, 51);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 50%;
+    padding: 15px;
+    border-radius: 100px;
+    box-shadow: 0 0 15px 5px #05bcdca4;
+    border: 2px #05bcdc solid;
+    color: #82d6f7;
+    width: 95%;
+  }
+
+  .nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  .dashboardtxt {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0 0 10px #2acbe4;
+    margin-bottom: 20px;
+  }
+
+  .clientDetails {
+    font-size: 18px;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  #sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.185);
+    background: linear-gradient(299deg, rgba(2, 76, 130, 0.1956954656862745) 0%, rgba(0, 38, 66, 0.44779630602240894) 49%, rgba(20, 48, 69, 0.9351912640056023) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .dashboardDetails {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+  }
+
+  #navMenuMob {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+  }
+
+  .banner {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  .dashboardBox {
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+  }
+
+  .dashboardBox1 {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #00c8eb9c;
+    border: 1px solid white;
+  }
+
+  .tableDashboard {
+    overflow-x: scroll;
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-col2 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+  }
+
+  .flex-col3 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 60%;
+  }
+
+  .trMain {
+    background-color: #1e293b;
+    border: white;
+    border-radius: 10px;
+  }
+
+  .trNew {
+    background-color: #042338;
+    border: 1px rgba(255, 255, 255, 0.459) solid;
+    width: 100%;
+  }
+
+  .btn {
+    background-color: #2acbe400;
+    padding: 5px;
+    border: 1px solid rgb(0, 93, 180);
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    background-color: #adf3fd11;
+  }
+
+  .btn2 {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:active {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:hover {
+    background-color: #adf3fd11;
+  }
+
+  .cartBg {
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 10vh;
+  }
+
+  .payForm {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background: rgb(0, 43, 75);
+    background: linear-gradient(351deg, rgba(0, 43, 75, 0.6606814600840336) 0%, rgba(0, 21, 34, 0.6046590511204482) 49%, rgba(0, 42, 74, 0.963202468487395) 100%);
+  }
+
+  .inputPay {
+    border: white 2px solid;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+  }
+
+  .bgGradient {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(351deg, rgba(0, 11, 19, 1) 0%, rgba(28, 65, 88, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient2 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient3 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .eventDetails {
+    color: #05bcdc8a;
+    margin-bottom: 10px;
+  }
+
+  .eventDetailsMain {
+    padding-bottom: 60px;
+  }
+
+  .GameMain {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 30px;
+    padding: 30px;
+    flex-flow: column nowrap;
+  }
+
+  .eventImg1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .ticket {
+    width: 70%;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transition: 0.5s;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(15deg);
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ticket:hover {
+    opacity: 0.3;
+  }
+
+  .ticket:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .navBtns {
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  .signUp {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    color: white;
+    padding: 10px;
+  }
+
+  .login {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  .loginMain {
+    width: 100%;
+    color: white;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    padding: 10px;
+    transform: 0.5s ease-in-out;
+  }
+
+  .loginMain:hover {
+    background-color: #adf3fd11;
+  }
+
+  .clientDetails span {
+    color: #00c7eb;
+  }
+
+  #navMenu2 {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  #navMenu {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  .red {
+    color: rgb(252, 24, 24);
+  }
+
+  .event {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+  .title {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5vh;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #2acbe4;
+  }
+
+  .bg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130009318540976190/NFTHouse9_numbers_photorealistic_cyber_punk_theme_fd5c3ecd-7a08-4cf1-afff-a10afeb2143e.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .eventBg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://media.discordapp.net/attachments/1008571037862080542/1130082267516116992/NFTHouse9_raffle_casino_cyber_punk_theme_2e21c1e6-f329-426d-a4bc-740a99e3350b.png?width=843&height=473') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .btBg {
+    background: radial-gradient(circle, rgba(0, 27, 47, 0.20129770658263302) 0%, rgba(0, 13, 21, 0.6046590511204482) 49%, rgba(0, 13, 23, 0.963202468487395) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130094560077430814/NFTHouse9_coins_falling_cyber_punk_theme_7af67880-0c6b-4ddd-a0a9-ffd2a6997d85.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 15vh;
+  }
+
+  .box2Main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .box2 {
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease-in-out;
+    margin-bottom: 30px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box2:hover {
+    color: #00c7eb;
+  }
+
+  #searchForm {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .search {
+    background-color: rgb(0, 22, 51);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 50%;
+    padding: 15px;
+    border-radius: 100px;
+    box-shadow: 0 0 15px 5px #05bcdca4;
+    border: 2px #05bcdc solid;
+    color: #82d6f7;
+    width: 90%;
+  }
+
+  .nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  .dashboardtxt {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 0 10px #2acbe4;
+    margin-bottom: 20px;
+  }
+
+  .clientDetails {
+    font-size: 18px;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  #sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.185);
+    background: linear-gradient(299deg, rgba(2, 76, 130, 0.1956954656862745) 0%, rgba(0, 38, 66, 0.44779630602240894) 49%, rgba(20, 48, 69, 0.9351912640056023) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .dashboardDetails {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+  }
+
+  #navMenuMob {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+  }
+
+  .banner {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  .dashboardBox {
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+  }
+
+  .dashboardBox1 {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #00c8eb9c;
+    border: 1px solid white;
+  }
+
+  .tableDashboard {
+    overflow-x: scroll;
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-col2 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+  }
+
+  .flex-col3 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 60%;
+  }
+
+  .trMain {
+    background-color: #1e293b;
+    border: white;
+    border-radius: 10px;
+  }
+
+  .trNew {
+    background-color: #042338;
+    border: 1px rgba(255, 255, 255, 0.459) solid;
+    width: 100%;
+  }
+
+  .btn {
+    background-color: #2acbe400;
+    padding: 5px;
+    border: 1px solid rgb(0, 93, 180);
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    background-color: #adf3fd11;
+  }
+
+  .btn2 {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:active {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:hover {
+    background-color: #adf3fd11;
+  }
+
+  .cartBg {
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 10vh;
+  }
+
+  .payForm {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background: rgb(0, 43, 75);
+    background: linear-gradient(351deg, rgba(0, 43, 75, 0.6606814600840336) 0%, rgba(0, 21, 34, 0.6046590511204482) 49%, rgba(0, 42, 74, 0.963202468487395) 100%);
+  }
+
+  .inputPay {
+    border: white 2px solid;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+  }
+
+  .bgGradient {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(351deg, rgba(0, 11, 19, 1) 0%, rgba(28, 65, 88, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient2 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient3 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .eventDetails {
+    color: #05bcdc8a;
+    margin-bottom: 10px;
+  }
+
+  .eventDetailsMain {
+    padding-bottom: 60px;
+  }
+
+  .GameMain {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 30px;
+    padding: 30px;
+    flex-flow: column nowrap;
+  }
+
+  .eventImg1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .ticket {
+    width: 70%;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transition: 0.5s;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(15deg);
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ticket:hover {
+    opacity: 0.3;
+  }
+
+  .ticket:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .navBtns {
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  .signUp {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    color: white;
+    padding: 10px;
+  }
+
+  .login {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  .loginMain {
+    width: 100%;
+    color: white;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    padding: 10px;
+    transform: 0.5s ease-in-out;
+  }
+
+  .loginMain:hover {
+    background-color: #adf3fd11;
+  }
+
+  .clientDetails span {
+    color: #00c7eb;
+  }
+
+  #navMenu2 {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  #navMenu {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  .red {
+    color: rgb(252, 24, 24);
+  }
+
+  .event {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .title {
+    color: white;
+    text-align: center;
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5vh;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #2acbe4;
+  }
+
+  .bg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130009318540976190/NFTHouse9_numbers_photorealistic_cyber_punk_theme_fd5c3ecd-7a08-4cf1-afff-a10afeb2143e.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .eventBg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://media.discordapp.net/attachments/1008571037862080542/1130082267516116992/NFTHouse9_raffle_casino_cyber_punk_theme_2e21c1e6-f329-426d-a4bc-740a99e3350b.png?width=843&height=473') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .btBg {
+    background: radial-gradient(circle, rgba(0, 27, 47, 0.20129770658263302) 0%, rgba(0, 13, 21, 0.6046590511204482) 49%, rgba(0, 13, 23, 0.963202468487395) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130094560077430814/NFTHouse9_coins_falling_cyber_punk_theme_7af67880-0c6b-4ddd-a0a9-ffd2a6997d85.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 15vh;
+  }
+
+  .box2Main {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .box2 {
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease-in-out;
+  }
+
+  .box2:hover {
+    color: #00c7eb;
+  }
+
+  #searchForm {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .search {
+    background-color: rgb(0, 22, 51);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 50%;
+    padding: 15px;
+    border-radius: 100px;
+    box-shadow: 0 0 15px 5px #05bcdca4;
+    border: 2px #05bcdc solid;
+    color: #82d6f7;
+    width: 90%;
+  }
+
+  .nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  .dashboardtxt {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 0 10px #2acbe4;
+    margin-bottom: 20px;
+  }
+
+  .clientDetails {
+    font-size: 18px;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  #sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.185);
+    background: linear-gradient(299deg, rgba(2, 76, 130, 0.1956954656862745) 0%, rgba(0, 38, 66, 0.44779630602240894) 49%, rgba(20, 48, 69, 0.9351912640056023) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .dashboardDetails {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+  }
+
+  #navMenuMob {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+  }
+
+  .banner {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  .dashboardBox {
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+  }
+
+  .dashboardBox1 {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #00c8eb9c;
+    border: 1px solid white;
+  }
+
+  .tableDashboard {
+    overflow-x: scroll;
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-col2 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+  }
+
+  .flex-col3 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 60%;
+  }
+
+  .trMain {
+    background-color: #1e293b;
+    border: white;
+    border-radius: 10px;
+  }
+
+  .trNew {
+    background-color: #042338;
+    border: 1px rgba(255, 255, 255, 0.459) solid;
+  }
+
+  .btn {
+    background-color: #2acbe400;
+    padding: 5px;
+    border: 1px solid rgb(0, 93, 180);
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    background-color: #adf3fd11;
+  }
+
+  .btn2 {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:active {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:hover {
+    background-color: #adf3fd11;
+  }
+
+  .cartBg {
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 10vh;
+  }
+
+  .payForm {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background: rgb(0, 43, 75);
+    background: linear-gradient(351deg, rgba(0, 43, 75, 0.6606814600840336) 0%, rgba(0, 21, 34, 0.6046590511204482) 49%, rgba(0, 42, 74, 0.963202468487395) 100%);
+  }
+
+  .inputPay {
+    border: white 2px solid;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+  }
+
+  .bgGradient {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(351deg, rgba(0, 11, 19, 1) 0%, rgba(28, 65, 88, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient2 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient3 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .eventDetails {
+    color: #05bcdc8a;
+    margin-bottom: 10px;
+  }
+
+  .eventDetailsMain {
+    padding-bottom: 60px;
+  }
+
+  .GameMain {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 30px;
+    padding: 30px;
+    flex-flow: column nowrap;
+
+  }
+
+  .eventImg1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .ticket {
+    width: 70%;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transition: 0.5s;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(15deg);
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .ticket:hover {
+    opacity: 0.3;
+  }
+
+  .ticket:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .navBtns {
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  .signUp {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    color: white;
+    padding: 10px;
+  }
+
+  .login {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  .loginMain {
+    width: 100%;
+    color: white;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    padding: 10px;
+    transform: 0.5s ease-in-out;
+  }
+
+  .loginMain:hover {
+    background-color: #adf3fd11;
+  }
+
+  .clientDetails span {
+    color: #00c7eb;
+  }
+
+  #navMenu2 {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  #navMenu {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  .red {
+    color: rgb(252, 24, 24);
+  }
+
+  .event {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .title {
+    color: white;
+    text-align: center;
+    font-size: 120px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5vh;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #2acbe4;
+  }
+
+  .bg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130009318540976190/NFTHouse9_numbers_photorealistic_cyber_punk_theme_fd5c3ecd-7a08-4cf1-afff-a10afeb2143e.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .eventBg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://media.discordapp.net/attachments/1008571037862080542/1130082267516116992/NFTHouse9_raffle_casino_cyber_punk_theme_2e21c1e6-f329-426d-a4bc-740a99e3350b.png?width=843&height=473') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .btBg {
+    background: radial-gradient(circle, rgba(0, 27, 47, 0.20129770658263302) 0%, rgba(0, 13, 21, 0.6046590511204482) 49%, rgba(0, 13, 23, 0.963202468487395) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130094560077430814/NFTHouse9_coins_falling_cyber_punk_theme_7af67880-0c6b-4ddd-a0a9-ffd2a6997d85.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 15vh;
+  }
+
+  .box2Main {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .box2 {
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease-in-out;
+  }
+
+  .box2:hover {
+    color: #00c7eb;
+  }
+
+  #searchForm {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .search {
+    background-color: rgb(0, 22, 51);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 50%;
+    padding: 15px;
+    border-radius: 100px;
+    box-shadow: 0 0 15px 5px #05bcdca4;
+    border: 2px #05bcdc solid;
+    color: #82d6f7;
+  }
+
+  .nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  .dashboardtxt {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 0 10px #2acbe4;
+    margin-bottom: 20px;
+  }
+
+  .clientDetails {
+    font-size: 18px;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  #sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.185);
+    background: linear-gradient(299deg, rgba(2, 76, 130, 0.1956954656862745) 0%, rgba(0, 38, 66, 0.44779630602240894) 49%, rgba(20, 48, 69, 0.9351912640056023) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .dashboardDetails {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+  }
+
+  #navMenuMob {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+  }
+
+  .banner {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  .dashboardBox {
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+  }
+
+  .dashboardBox1 {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #00c8eb9c;
+    border: 1px solid white;
+  }
+
+  .tableDashboard {
+    overflow-x: scroll;
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-col2 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+  }
+
+  .flex-col3 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 60%;
+  }
+
+  .trMain {
+    background-color: #1e293b;
+    border: white;
+    border-radius: 10px;
+  }
+
+  .trNew {
+    background-color: #042338;
+    border: 1px rgba(255, 255, 255, 0.459) solid;
+  }
+
+  .btn {
+    background-color: #2acbe400;
+    padding: 5px;
+    border: 1px solid rgb(0, 93, 180);
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    background-color: #adf3fd11;
+  }
+
+  .btn2 {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:active {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:hover {
+    background-color: #adf3fd11;
+  }
+
+  .cartBg {
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 10vh;
+  }
+
+  .payForm {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background: rgb(0, 43, 75);
+    background: linear-gradient(351deg, rgba(0, 43, 75, 0.6606814600840336) 0%, rgba(0, 21, 34, 0.6046590511204482) 49%, rgba(0, 42, 74, 0.963202468487395) 100%);
+  }
+
+  .inputPay {
+    border: white 2px solid;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+  }
+
+  .bgGradient {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(351deg, rgba(0, 11, 19, 1) 0%, rgba(28, 65, 88, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient2 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient3 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient3 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .eventDetails {
+    color: #05bcdc8a;
+    margin-bottom: 10px;
+  }
+
+  .eventDetailsMain {
+    padding-bottom: 60px;
+  }
+
+  .GameMain {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 30px;
+    padding: 30px;
+  }
+
+  .eventImg1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .ticket {
+    width: 70%;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transition: 0.5s;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(15deg);
+  }
+
+  .ticket:hover {
+    opacity: 0.3;
+  }
+
+  .ticket:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  .logo {
+    width: 15%;
+  }
+
+  .navBtns {
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  .signUp {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    color: white;
+    padding: 10px;
+  }
+
+  .login {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  .loginMain {
+    width: 100%;
+    color: white;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    padding: 10px;
+    transform: 0.5s ease-in-out;
+  }
+
+  .loginMain:hover {
+    background-color: #adf3fd11;
+  }
+
+  .clientDetails span {
+    color: #00c7eb;
+  }
+
+  #navMenu2 {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  #navMenu {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  .red {
+    color: rgb(252, 24, 24);
+  }
+
+  .event {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+
+  .title {
+    color: white;
+    text-align: center;
+    font-size: 120px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5vh;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #2acbe4;
+  }
+
+  .bg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130009318540976190/NFTHouse9_numbers_photorealistic_cyber_punk_theme_fd5c3ecd-7a08-4cf1-afff-a10afeb2143e.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .eventBg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://media.discordapp.net/attachments/1008571037862080542/1130082267516116992/NFTHouse9_raffle_casino_cyber_punk_theme_2e21c1e6-f329-426d-a4bc-740a99e3350b.png?width=843&height=473') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .btBg {
+    background: radial-gradient(circle, rgba(0, 27, 47, 0.20129770658263302) 0%, rgba(0, 13, 21, 0.6046590511204482) 49%, rgba(0, 13, 23, 0.963202468487395) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130094560077430814/NFTHouse9_coins_falling_cyber_punk_theme_7af67880-0c6b-4ddd-a0a9-ffd2a6997d85.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 15vh;
+  }
+
+  .box2Main {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .box2 {
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease-in-out;
+  }
+
+  .box2:hover {
+    color: #00c7eb;
+  }
+
+  #searchForm {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .search {
+    background-color: rgb(0, 22, 51);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 50%;
+    padding: 15px;
+    border-radius: 100px;
+    box-shadow: 0 0 15px 5px #05bcdca4;
+    border: 2px #05bcdc solid;
+    color: #82d6f7;
+  }
+
+  .nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  .dashboardtxt {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 0 10px #2acbe4;
+    margin-bottom: 20px;
+  }
+
+  .clientDetails {
+    font-size: 18px;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  #sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.185);
+    background: linear-gradient(299deg, rgba(2, 76, 130, 0.1956954656862745) 0%, rgba(0, 38, 66, 0.44779630602240894) 49%, rgba(20, 48, 69, 0.9351912640056023) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .dashboardDetails {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+  }
+
+  #navMenuMob {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+  }
+
+  .banner {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  .dashboardBox {
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+  }
+
+  .dashboardBox1 {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #00c8eb9c;
+    border: 1px solid white;
+  }
+
+  .tableDashboard {
+    overflow-x: scroll;
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-col2 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+  }
+
+  .flex-col3 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 60%;
+  }
+
+  .trMain {
+    background-color: #1e293b;
+    border: white;
+    border-radius: 10px;
+  }
+
+  .trNew {
+    background-color: #042338;
+    border: 1px rgba(255, 255, 255, 0.459) solid;
+  }
+
+  .btn {
+    background-color: #2acbe400;
+    padding: 5px;
+    border: 1px solid rgb(0, 93, 180);
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    background-color: #adf3fd11;
+  }
+
+  .btn2 {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:active {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:hover {
+    background-color: #adf3fd11;
+  }
+
+  .cartBg {
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 10vh;
+  }
+
+  .payForm {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background: rgb(0, 43, 75);
+    background: linear-gradient(351deg, rgba(0, 43, 75, 0.6606814600840336) 0%, rgba(0, 21, 34, 0.6046590511204482) 49%, rgba(0, 42, 74, 0.963202468487395) 100%);
+  }
+
+  .inputPay {
+    border: white 2px solid;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+  }
+
+  .bgGradient {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(351deg, rgba(0, 11, 19, 1) 0%, rgba(28, 65, 88, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient2 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient3 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient3 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .eventDetails {
+    color: #05bcdc8a;
+    margin-bottom: 10px;
+  }
+
+  .eventDetailsMain {
+    padding-bottom: 60px;
+  }
+
+  .GameMain {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 30px;
+    padding: 30px;
+  }
+
+  .eventImg1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .ticket {
+    width: 70%;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transition: 0.5s;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(15deg);
+  }
+
+  .ticket:hover {
+    opacity: 0.3;
+  }
+
+  .ticket:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  .logo {
+    width: 15%;
+  }
+
+  .navBtns {
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  .signUp {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    color: white;
+    padding: 10px;
+  }
+
+  .login {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  .loginMain {
+    width: 100%;
+    color: white;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    padding: 10px;
+    transform: 0.5s ease-in-out;
+  }
+
+  .loginMain:hover {
+    background-color: #adf3fd11;
+  }
+
+  .clientDetails span {
+    color: #00c7eb;
+  }
+
+  #navMenu2 {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  #navMenu {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  .red {
+    color: rgb(252, 24, 24);
+  }
+
+  .event {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+
+  .title {
+    color: white;
+    text-align: center;
+    font-size: 140px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5vh;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px #2acbe4;
+  }
+
+  .bg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130009318540976190/NFTHouse9_numbers_photorealistic_cyber_punk_theme_fd5c3ecd-7a08-4cf1-afff-a10afeb2143e.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .eventBg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://media.discordapp.net/attachments/1008571037862080542/1130082267516116992/NFTHouse9_raffle_casino_cyber_punk_theme_2e21c1e6-f329-426d-a4bc-740a99e3350b.png?width=843&height=473') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .btBg {
+    background: radial-gradient(circle, rgba(0, 27, 47, 0.20129770658263302) 0%, rgba(0, 13, 21, 0.6046590511204482) 49%, rgba(0, 13, 23, 0.963202468487395) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130094560077430814/NFTHouse9_coins_falling_cyber_punk_theme_7af67880-0c6b-4ddd-a0a9-ffd2a6997d85.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 15vh;
+  }
+
+  .box2Main {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .box2 {
+    color: white;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease-in-out;
+    font-size: 23px;
+  }
+
+  .box2:hover {
+    color: #00c7eb;
+  }
+
+  #searchForm {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .search {
+    background-color: rgb(0, 22, 51);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 0 0 15px 5px #05bcdca4;
+    border: 2px #05bcdc solid;
+    color: #82d6f7;
+    font-size: 23px;
+  }
+
+  .nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  .dashboardtxt {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0 0 10px #2acbe4;
+    margin-bottom: 20px;
+  }
+
+  .clientDetails {
+    font-size: 25px;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  #sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.185);
+    background: linear-gradient(299deg, rgba(2, 76, 130, 0.1956954656862745) 0%, rgba(0, 38, 66, 0.44779630602240894) 49%, rgba(20, 48, 69, 0.9351912640056023) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .dashboardDetails {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+  }
+
+  #navMenuMob {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+  }
+
+  .banner {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  .dashboardBox {
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+  }
+
+  .dashboardBox1 {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #00c8eb9c;
+    border: 1px solid white;
+    font-size: 23px;
+  }
+
+  .tableDashboard {
+    overflow-x: scroll;
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 23px;
+
+  }
+
+  .flex-col2 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-size: 23px;
+
+  }
+
+  .flex-col3 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 60%;
+    font-size: 23px;
+
+  }
+
+  .trMain {
+    background-color: #1e293b;
+    border: white;
+    border-radius: 10px;
+    font-size: 23px;
+
+  }
+
+  .trNew {
+    background-color: #042338;
+    border: 1px rgba(255, 255, 255, 0.459) solid;
+  }
+
+  .btn {
+    background-color: #2acbe400;
+    padding: 5px;
+    border: 1px solid rgb(0, 93, 180);
+    border-radius: 5px;
+    font-size: 23px;
+    width: max-content;
+
+  }
+
+  .btn:hover {
+    background-color: #adf3fd11;
+  }
+
+  .btn2 {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: max-content;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .btn2:active {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: max-content;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:hover {
+    background-color: #adf3fd11;
+  }
+
+  .cartBg {
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 10vh;
+  }
+
+  .payForm {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background: rgb(0, 43, 75);
+    background: linear-gradient(351deg, rgba(0, 43, 75, 0.6606814600840336) 0%, rgba(0, 21, 34, 0.6046590511204482) 49%, rgba(0, 42, 74, 0.963202468487395) 100%);
+    font-size: 23px;
+
+  }
+
+  .inputPay {
+    border: white 2px solid;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 23px;
+
+  }
+
+  .bgGradient {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(351deg, rgba(0, 11, 19, 1) 0%, rgba(28, 65, 88, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient2 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient3 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .eventDetails {
+    color: #05bcdc8a;
+    margin-bottom: 10px;
+  }
+
+  .eventDetailsMain {
+    padding-bottom: 60px;
+  }
+
+  .GameMain {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 30px;
+    padding: 30px;
+    font-size: 23px;
+
+  }
+
+  .eventImg1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .ticket {
+    width: 70%;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transition: 0.5s;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(15deg);
+  }
+
+  .ticket:hover {
+    opacity: 0.3;
+  }
+
+  .ticket:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  .logo {
+    width: 22%;
+  }
+
+  .navBtns {
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  .signUp {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    color: white;
+    padding: 13px;
+    font-size: 23px;
+  }
+
+  .login {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  .loginMain {
+    width: 100%;
+    color: white;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    padding: 10px;
+    transform: 0.5s ease-in-out;
+  }
+
+  .loginMain:hover {
+    background-color: #adf3fd11;
+  }
+
+  .clientDetails span {
+    color: #00c7eb;
+    font-size: 23px;
+  }
+
+  #navMenu2 {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  #navMenu {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  .red {
+    color: rgb(252, 24, 24);
+  }
+
+  .event {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 23px;
+  }
+
+  #fontSize {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 3839px) {
+
+  .title {
+    color: white;
+    text-align: center;
+    font-size: 140px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5vh;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px #2acbe4;
+  }
+
+  .bg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130009318540976190/NFTHouse9_numbers_photorealistic_cyber_punk_theme_fd5c3ecd-7a08-4cf1-afff-a10afeb2143e.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .eventBg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://media.discordapp.net/attachments/1008571037862080542/1130082267516116992/NFTHouse9_raffle_casino_cyber_punk_theme_2e21c1e6-f329-426d-a4bc-740a99e3350b.png?width=843&height=473') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .btBg {
+    background: radial-gradient(circle, rgba(0, 27, 47, 0.20129770658263302) 0%, rgba(0, 13, 21, 0.6046590511204482) 49%, rgba(0, 13, 23, 0.963202468487395) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130094560077430814/NFTHouse9_coins_falling_cyber_punk_theme_7af67880-0c6b-4ddd-a0a9-ffd2a6997d85.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 15vh;
+  }
+
+  .box2Main {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .box2 {
+    color: white;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease-in-out;
+    font-size: 23px;
+  }
+
+  .box2:hover {
+    color: #00c7eb;
+  }
+
+  #searchForm {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .search {
+    background-color: rgb(0, 22, 51);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 0 0 15px 5px #05bcdca4;
+    border: 2px #05bcdc solid;
+    color: #82d6f7;
+    font-size: 23px;
+  }
+
+  .nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  .dashboardtxt {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0 0 10px #2acbe4;
+    margin-bottom: 20px;
+  }
+
+  .clientDetails {
+    font-size: 25px;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  #sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.185);
+    background: linear-gradient(299deg, rgba(2, 76, 130, 0.1956954656862745) 0%, rgba(0, 38, 66, 0.44779630602240894) 49%, rgba(20, 48, 69, 0.9351912640056023) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .dashboardDetails {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+  }
+
+  #navMenuMob {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+  }
+
+  .banner {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  .dashboardBox {
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+  }
+
+  .dashboardBox1 {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #00c8eb9c;
+    border: 1px solid white;
+    font-size: 23px;
+  }
+
+  .tableDashboard {
+    overflow-x: scroll;
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 23px;
+
+  }
+
+  .flex-col2 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-size: 23px;
+
+  }
+
+  .flex-col3 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 60%;
+    font-size: 23px;
+
+  }
+
+  .trMain {
+    background-color: #1e293b;
+    border: white;
+    border-radius: 10px;
+    font-size: 23px;
+
+  }
+
+  .trNew {
+    background-color: #042338;
+    border: 1px rgba(255, 255, 255, 0.459) solid;
+  }
+
+  .btn {
+    background-color: #2acbe400;
+    padding: 5px;
+    border: 1px solid rgb(0, 93, 180);
+    border-radius: 5px;
+    font-size: 23px;
+    width: max-content;
+
+  }
+
+  .btn:hover {
+    background-color: #adf3fd11;
+  }
+
+  .btn2 {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: max-content;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .btn2:active {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: max-content;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:hover {
+    background-color: #adf3fd11;
+  }
+
+  .cartBg {
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 10vh;
+  }
+
+  .payForm {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background: rgb(0, 43, 75);
+    background: linear-gradient(351deg, rgba(0, 43, 75, 0.6606814600840336) 0%, rgba(0, 21, 34, 0.6046590511204482) 49%, rgba(0, 42, 74, 0.963202468487395) 100%);
+    font-size: 23px;
+
+  }
+
+  .inputPay {
+    border: white 2px solid;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 23px;
+
+  }
+
+  .bgGradient {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(351deg, rgba(0, 11, 19, 1) 0%, rgba(28, 65, 88, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient2 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient3 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .eventDetails {
+    color: #05bcdc8a;
+    margin-bottom: 10px;
+  }
+
+  .eventDetailsMain {
+    padding-bottom: 60px;
+  }
+
+  .GameMain {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 30px;
+    padding: 30px;
+    font-size: 23px;
+
+  }
+
+  .eventImg1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .ticket {
+    width: 70%;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transition: 0.5s;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(15deg);
+  }
+
+  .ticket:hover {
+    opacity: 0.3;
+  }
+
+  .ticket:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  .logo {
+    width: 22%;
+  }
+
+  .navBtns {
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  .signUp {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    color: white;
+    padding: 13px;
+    font-size: 23px;
+  }
+
+  .login {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  .loginMain {
+    width: 100%;
+    color: white;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    padding: 10px;
+    transform: 0.5s ease-in-out;
+  }
+
+  .loginMain:hover {
+    background-color: #adf3fd11;
+  }
+
+  .clientDetails span {
+    color: #00c7eb;
+    font-size: 23px;
+  }
+
+  #navMenu2 {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  #navMenu {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  .red {
+    color: rgb(252, 24, 24);
+  }
+
+  .event {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 23px;
+  }
+
+  #fontSize {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+
+  .title {
+    color: white;
+    text-align: center;
+    font-size: 140px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5vh;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px #2acbe4;
+  }
+
+  .bg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130009318540976190/NFTHouse9_numbers_photorealistic_cyber_punk_theme_fd5c3ecd-7a08-4cf1-afff-a10afeb2143e.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .eventBg {
+    background: radial-gradient(circle, rgba(0, 18, 31, 0.1956954656862745) 0%, rgba(0, 22, 38, 0.44779630602240894) 49%, rgba(0, 11, 19, 0.9351912640056023) 100%), url('https://media.discordapp.net/attachments/1008571037862080542/1130082267516116992/NFTHouse9_raffle_casino_cyber_punk_theme_2e21c1e6-f329-426d-a4bc-740a99e3350b.png?width=843&height=473') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .btBg {
+    background: radial-gradient(circle, rgba(0, 27, 47, 0.20129770658263302) 0%, rgba(0, 13, 21, 0.6046590511204482) 49%, rgba(0, 13, 23, 0.963202468487395) 100%), url('https://cdn.discordapp.com/attachments/1008571037862080542/1130094560077430814/NFTHouse9_coins_falling_cyber_punk_theme_7af67880-0c6b-4ddd-a0a9-ffd2a6997d85.png') no-repeat center center fixed;
+    /*background: linear-gradient(180deg, rgba(0,0,0,0.7203256302521008) 0%, rgba(0,0,0,0.2497373949579832) 50%, rgba(0,0,0,0.742734593837535) 100%), url('./assets/footer.png') no-repeat center center fixed;*/
+    padding-top: 5vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: max-content;
+    overflow: hidden;
+    /*animation: changeBackground 10s infinite;*/
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 15vh;
+  }
+
+  .box2Main {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .box2 {
+    color: white;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease-in-out;
+    font-size: 23px;
+  }
+
+  .box2:hover {
+    color: #00c7eb;
+  }
+
+  #searchForm {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .search {
+    background-color: rgb(0, 22, 51);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 0 0 15px 5px #05bcdca4;
+    border: 2px #05bcdc solid;
+    color: #82d6f7;
+    font-size: 23px;
+  }
+
+  .nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #01121d;
+  }
+
+  .dashboardtxt {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0 0 10px #2acbe4;
+    margin-bottom: 20px;
+  }
+
+  .clientDetails {
+    font-size: 25px;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  #sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.185);
+    background: linear-gradient(299deg, rgba(2, 76, 130, 0.1956954656862745) 0%, rgba(0, 38, 66, 0.44779630602240894) 49%, rgba(20, 48, 69, 0.9351912640056023) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+  }
+
+  .dashboardDetails {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+  }
+
+  #navMenuMob {
+    width: 100%;
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+  }
+
+  .banner {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  .dashboardBox {
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+  }
+
+  .dashboardBox1 {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #00c8eb9c;
+    border: 1px solid white;
+    font-size: 23px;
+  }
+
+  .tableDashboard {
+    overflow-x: scroll;
+    border: 1px rgba(255, 255, 255, 0.363) solid;
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 23px;
+
+  }
+
+  .flex-col2 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-size: 23px;
+
+  }
+
+  .flex-col3 {
+    margin-top: 10vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 60%;
+    font-size: 23px;
+
+  }
+
+  .trMain {
+    background-color: #1e293b;
+    border: white;
+    border-radius: 10px;
+    font-size: 23px;
+
+  }
+
+  .trNew {
+    background-color: #042338;
+    border: 1px rgba(255, 255, 255, 0.459) solid;
+  }
+
+  .btn {
+    background-color: #2acbe400;
+    padding: 5px;
+    border: 1px solid rgb(0, 93, 180);
+    border-radius: 5px;
+    font-size: 23px;
+    width: max-content;
+
+  }
+
+  .btn:hover {
+    background-color: #adf3fd11;
+  }
+
+  .btn2 {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: max-content;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .btn2:active {
+    border: white 2px solid;
+    color: rgb(139, 234, 247);
+    width: max-content;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn2:hover {
+    background-color: #adf3fd11;
+  }
+
+  .cartBg {
+    background: rgb(2, 39, 66);
+    background: linear-gradient(351deg, rgba(2, 39, 66, 1) 0%, rgba(0, 21, 35, 1) 49%, rgba(22, 44, 61, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    background-size: cover;
+    padding-top: 10vh;
+  }
+
+  .payForm {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background: rgb(0, 43, 75);
+    background: linear-gradient(351deg, rgba(0, 43, 75, 0.6606814600840336) 0%, rgba(0, 21, 34, 0.6046590511204482) 49%, rgba(0, 42, 74, 0.963202468487395) 100%);
+    font-size: 23px;
+
+  }
+
+  .inputPay {
+    border: white 2px solid;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 23px;
+
+  }
+
+  .bgGradient {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(351deg, rgba(0, 11, 19, 1) 0%, rgba(28, 65, 88, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient2 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+  }
+
+  .bgGradient3 {
+    background: rgb(0, 11, 19);
+    background: linear-gradient(62deg, rgba(0, 11, 19, 1) 0%, rgba(13, 34, 47, 1) 49%, rgba(0, 24, 42, 1) 100%);
+    height: max-content;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 5vh;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .eventDetails {
+    color: #05bcdc8a;
+    margin-bottom: 10px;
+  }
+
+  .eventDetailsMain {
+    padding-bottom: 60px;
+  }
+
+  .GameMain {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 30px;
+    padding: 30px;
+    font-size: 23px;
+
+  }
+
+  .eventImg1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .ticket {
+    width: 70%;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transition: 0.5s;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(15deg);
+  }
+
+  .ticket:hover {
+    opacity: 0.3;
+  }
+
+  .ticket:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  .logo {
+    width: 22%;
+  }
+
+  .navBtns {
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  .signUp {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    color: white;
+    padding: 13px;
+    font-size: 23px;
+  }
+
+  .login {
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    transform: 0.2s ease;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  .loginMain {
+    width: 100%;
+    color: white;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: 0 0 10px #FFFFFF;
+    padding: 10px;
+    transform: 0.5s ease-in-out;
+  }
+
+  .loginMain:hover {
+    background-color: #adf3fd11;
+  }
+
+  .clientDetails span {
+    color: #00c7eb;
+    font-size: 23px;
+  }
+
+  #navMenu2 {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  #navMenu {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
+  .red {
+    color: rgb(252, 24, 24);
+  }
+
+  .event {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 23px;
+  }
+
+  #fontSize {
+    font-size: 23px;
+  }
+}
